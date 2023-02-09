@@ -36,7 +36,12 @@ function setup(){
     let bubble = new Bubble(100,200);  //Object instance using template
 
     console.log(bubble.x, bubble.y)  //print = console.log
+
+    let canvas1 = document.querySelector(".canvas");
+    canvas1.addEventListener("click",()=>{
+        bubble.move();
+        bubble.show();
+    })
     
-    bubble.move();
-    bubble.show();
+
 }
